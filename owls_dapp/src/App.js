@@ -1,7 +1,17 @@
 import { useEffect, useState } from 'react';
 
 // assets and styling
-import owl from './OmniscientOwls-40.png';
+import owl from './images/owl_og.png';
+import owl2 from './images/1.png';
+import owl3 from './images/4.png';
+import owl4 from './images/7.png';
+import owl5 from './images/10.png';
+import owl6 from './images/20.png';
+import owl7 from './images/41.png';
+import owl8 from './images/66.png';
+import owl9 from './images/96.png';
+import owl10 from './images/100.png';
+
 import './App.css';
 
 // configs
@@ -136,9 +146,42 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={owl} className="App-logo" alt="logo" />
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src={owl} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl2} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl3} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl4} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl5} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl6} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl7} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl8} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl9} height="300" width="300" alt="" />
+            </div>
+            <div class="slide">
+              <img src={owl10} height="500" width="500" alt="" />
+            </div>
+          </div>
+        </div>
         <p>
-          {message}
+          {error || message}
         </p>
         <p>
           {walletIsConnected ? "Click button below to mint your first owl!" : "Please connect your metamask wallet first!"}
